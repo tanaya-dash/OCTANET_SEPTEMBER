@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhubaneswar Tourism</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .logo img {
+            max-height: 100px; /* Adjust this value as needed */
+            vertical-align: middle;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+        }
+
+        .nav-list li {
+            margin-left: 20px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        .nav-list a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url('https://media.gettyimages.com/id/536030154/photo/rajarani-temple-in-bhubaneswar.jpg?s=612x612&w=0&k=20&c=5rd4yeuqPmXsHZxrfr5FSTRrho5RDK5Q4htszzgsfkQ=');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff8787;
+        }
+
+        .destinations {
+            padding: 4rem 2rem;
+            background-color: #f8f9fa;
+        }
+
+        .destinations h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .destination-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destination-card-content {
+            padding: 1.5rem;
+        }
+
+        .destination-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .destination-card p {
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+
+        .explore-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #4ecdc4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-button:hover {
+            background-color: #45b7aa;
+        }
+
+        .Button {
+            background-color: rgb(36, 64, 141);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .Button button {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 20px;
+            background-color: rgb(0, 213, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .Button button:hover {
+            background-color: rgb(235, 230, 223);
+        }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="Travel Logo.png"></div>
+            <ul class="nav-list">
+                <li><a href="C:\Users\tanay\OneDrive\Desktop\Octanet\LANDINGPAGE.html">Home</a></li>
+                <li><a href="C:\Users\tanay\OneDrive\Desktop\Octanet\About.html">About</a></li>
+                <li><a href="C:\Users\tanay\OneDrive\Desktop\Octanet\Services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore breathtaking destinations around the world</p>
+            <button class="cta-button">Start Your Journey</button>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="https://t4.ftcdn.net/jpg/03/07/36/71/360_F_307367172_NVUQnGUVvMXmBxKrCJwTPd8gXn5yIcxV.jpg" alt="Lingaraja Temple">
+                <div class="destination-card-content">
+                    <h3>Lingaraja Temple</h3>
+                    <p>The Lingaraja Temple, located in Bhubaneswar, Odisha, is one of the oldest and largest temples dedicated to Lord Shiva. Built in the 11th century during the reign of the Somavanshi dynasty, it is a classic example of Kalinga architecture. The temple is made of sandstone and laterite, and its towering spire (about 180 feet) dominates the skyline.
+                       The central deity, Harihara, is a unique form of Lord Shiva, symbolizing a fusion of Shiva and Vishnu. The temple complex consists of multiple smaller shrines and is a significant pilgrimage site, especially during festivals like Maha Shivaratri. It is renowned for its intricate carvings, beautiful sculptures, and religious importance in Hindu culture.</p>
+                    <a href="https://en.wikipedia.org/wiki/Lingaraja_Temple" class="explore-button">Explore</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.shutterstock.com/image-photo/parashurameshvara-temple-bhubaneswar-known-hindu-260nw-1145520419.jpg" alt="Parashurameshwar Temple">
+                <div class="destination-card-content">
+                    <h3>Parashurameshwar Temple</h3>
+                    <p>The Parashurameshwar Temple, located in Bhubaneswar, Odisha, is one of the earliest temples of the region, built around the "7th century" during the "Shailodbhava dynasty". It is dedicated to "Lord Shiva", with influences from both "Shaivism and "Shaktism". The temple is an excellent example of early "Kalinga architecture", showcasing detailed stone carvings and sculptures. Despite its small size, the temple is richly decorated with intricate motifs, including depictions of gods, goddesses, floral patterns, and mythological scenes. The temple also houses a "Shiva Lingam" and is known for its sanctity and historic significance. It holds a special place in Odisha's religious and architectural heritage.</p>
+                <a href="https://en.wikipedia.org/wiki/Parsurameswara_Temple" class="explore-button">Explore</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Muktesvar_Temple.jpg/330px-Muktesvar_Temple.jpg" alt="Mukteshwar Temple">
+                <div class="destination-card-content">
+                    <h3>Mukteshwar Temple</h3>
+                    <p>The "Mukteshwar Temple" in Bhubaneswar, Odisha, is a beautiful 10th-century temple dedicated to Lord Shiva. It is known for its intricate carvings and its distinctive "torana" (arched gateway), which reflects both Hindu and Buddhist architectural influences. Though small in size, the temple is a gem of early Kalinga-style architecture, with elaborately decorated walls and ceilings featuring scenes from Hindu mythology, floral motifs, and celestial beings. It is often referred to as the "Gem of Odisha architecture" for its exquisite craftsmanship.</p>
+                    <a href="https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar" class="explore-button">Explore</a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ananta_Vasudev.jpg/330px-Ananta_Vasudev.jpg" alt="Ananta Vasudeva">
+                <div class="destination-card-content">
+                    <h3>Ananta Vasudeva</h3>
+                    <p>The "Ananta Vasudeva Temple" in Bhubaneswar, Odisha, is a 13th-century temple dedicated to Lord Krishna, an incarnation of Lord Vishnu. It is unique because it is one of the few temples in Bhubaneswar dedicated to Vaishnavism, whereas most others are dedicated to Shiva. The temple enshrines images of Krishna, Balarama, and Subhadra, mirroring the famous Jagannath trio of Puri. Built in the Kalinga architectural style, the temple features intricate carvings and sculptures, showcasing the rich craftsmanship of the era. It remains an important site for Krishna worshippers in Odisha.</p>
+                    <a href="https://en.wikipedia.org/wiki/Ananta_Vasudeva_Temple" class="explore-button">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+        <section class="Button">
+            <a href="https://en.wikipedia.org/wiki/List_of_Hindu_temples_in_Bhubaneswar">
+              <button type="button">More</button>
+            </a>
+          </section>
+         
+          
+      <script>
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+      
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+            document.querySelector('.hero').style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+        });
+
+       
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.destination-card').forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
