@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://media.istockphoto.com/id/1444930735/photo/stone-carving-and-sculptures-on-the-wall-of-konark-sun-temple-at-puri-odisha-india.jpg?s=612x612&w=0&k=20&c=6rZbP_vMYEhYFk3AHk76fsyzd4u3T1ud3e25qQYi5HU=');
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: fadeInOut 10s infinite;
+            z-index: -1;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            color: #080103;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        .column {
+            flex: 1;
+            max-width: 45%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .container {
+            padding: 20px;
+            justify-items: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div>
+    <h1>ABOUT THE PAGE</h1>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <p>Welcome to the Bhubaneswar Tourism Portal, your ultimate guide to exploring the "Temple City of India." Bhubaneswar, the capital city of Odisha, is renowned for its rich cultural heritage, historic temples, and vibrant traditions. Our website aims to provide comprehensive information about the city's most iconic temples, such as the Lingaraj Temple, Mukteshwar Temple, and Rajarani Temple, each showcasing exquisite architectural styles and deep spiritual significance. The Lingaraj Temple, a masterpiece of Kalinga architecture, stands as a testament to Bhubaneswar's ancient heritage. With its towering spire and intricate carvings, it attracts devotees and tourists alike. The Mukteshwar Temple, often referred to as the 'Gem of Odisha,' is celebrated for its ornate torana (arched gateway) and detailed sculptures that narrate stories from Hindu mythology. Meanwhile, the Rajarani Temple, known for its stunning carvings and distinctive red and yellow sandstone, offers a glimpse into the region's artistic brilliance.
+                Our portal not only provides detailed descriptions of these and other temples but also delves into their historical contexts and cultural significance. We offer practical information on visiting hours, entry requirements, and special events or festivals that might enhance your experience. Additionally, our travel guides include tips on the best times to visit, nearby attractions, and local amenities to ensure a comfortable and enjoyable journey.
+                For travelers keen on exploring beyond the temples, Bhubaneswar offers a vibrant tapestry of experiences. From bustling markets brimming with traditional crafts and textiles to serene parks and museums that showcase Odisha's rich history, there is something for everyone. Our website features curated itineraries, recommended tours, and insights into local cuisine, helping you immerse yourself fully in the local culture.
+                To make your visit even more seamless, we provide detailed directions and transportation options. Whether you are arriving by air, rail, or road, our guides will help you navigate the city with ease. We also offer information on accommodation options ranging from budget-friendly stays to luxurious hotels, ensuring you find the perfect place to rest after a day of exploration.
+                Discover the hidden gems, local traditions, and the timeless beauty of Bhubaneswar through our carefully curated content. Whether you are a history enthusiast, a spiritual seeker, or a casual traveler, our platform is designed to help you navigate and appreciate this magnificent city. Join us in exploring Bhubaneswar, where every street, stone, and temple tells a story of a glorious past and a vibrant present.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
